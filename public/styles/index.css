@@ -1,0 +1,21 @@
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.inputRadio{
+    display: none;
+}
+img:checked{
+    border: 2px solid blue;
+}
+input + img {
+    cursor: pointer;
+}
