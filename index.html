@@ -5,28 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./public/styles/index.css">
+    <script src="https://kit.fontawesome.com/8ceb46e887.js" crossorigin="anonymous"></script>
     <title>Flip-Image</title>
 </head>
 <body>
     <main>
         <div class="container">
-            <label for="image1x1">
-                <input type="radio" name="image" id="image1x1" class="inputRadio">
-                <img src="public/img/img.jpg" width="100">
-            </label>
-            <label for="image1x2">
-                <input type="radio" name="image" id="image1x2" class="inputRadio">
-                <img src="public/img/img.jpg" width="100">
-            </label>
-            <label for="image2x1">
-                <input type="radio" name="image" id="image2x1" class="inputRadio">
-                <img src="public/img/img.jpg" width="100">
-            </label>
-            <label for="image2x2">
-                <input type="radio" name="image" id="image2x2" class="inputRadio">
-                <img src="public/img/img.jpg" width="100">
-            </label>
+            <button>
+                <img src="public/img/img.jpg" id="1x1" width="100" onclick="selectImage('1x1');">
+            </button>
+            <button>
+                <img src="public/img/img.jpg" id="1x2" width="100" onclick="selectImage('1x2');">
+            </button>
+            <button>
+                <img src="public/img/img.jpg" id="2x1" width="100" onclick="selectImage('2x1');">
+            </button>
+            <button>
+                <img src="public/img/img.jpg" id="2x2" width="100" onclick="selectImage('2x2');">
+            </button>
+        </div>
+        <div class="mobile-control">
+            <div class="box-up">
+                <button><p><i class="fa-solid fa-caret-up"></i></p></button>
+            </div>
+            <div class="box-bottom">
+                <button><p><i class="fa-solid fa-caret-left"></i></p></button>
+                <button><p><i class="fa-solid fa-caret-down"></i></p></button>
+                <button><p><i class="fa-solid fa-caret-right"></i></p></button>
+            </div>
         </div>
     </main>
+    <script src="app.js"></script>
 </body>
 </html>

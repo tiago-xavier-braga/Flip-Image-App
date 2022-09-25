@@ -1,5 +1,6 @@
 main{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
@@ -8,14 +9,39 @@ main{
 .container{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    width: 100%;
 }
-
-.inputRadio{
-    display: none;
+button{
+    border: none;
+    padding: 4%;
+    background-color: transparent;
 }
-img:checked{
-    border: 2px solid blue;
+img{
+    width: 90%;
+    margin: 2%;
 }
-input + img {
-    cursor: pointer;
+.mobile-control{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10%;
+}
+.box-up{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+}
+.box-up button{
+    width: 33%;
+    margin: 0 auto 0 auto;
+}
+.box-bottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
 }
