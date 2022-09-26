@@ -3,8 +3,8 @@ var buttonSelect = [];
 function selectImage(position){
     let image = document.getElementById(position);
 
-    if(image.style.border != '4px solid blue'){
-        image.style.border = '4px solid blue';
+    if(image.style.border != '2px solid blue'){
+        image.style.border = '2px solid blue';
         
         buttonSelect.push(position);
     } else{
@@ -14,4 +14,7 @@ function selectImage(position){
     }
 
     return buttonSelect;
+}
+function flipImage(){
+    document.getElementById('1x1img').style = "transform: scaleX(-1);";
 }
