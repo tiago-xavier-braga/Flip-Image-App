@@ -15,6 +15,32 @@ function selectImage(position){
 
     return buttonSelect;
 }
-function flipImage(){
-    document.getElementById('1x1img').style = "transform: scaleX(-1);";
+
+function keyEvent(event) {
+    var key = event.keyCode || event.which;
+    var keychar = String.fromCharCode(key);
+    //alert("Key pressed " + key);
+    if(key == 37){
+        buttonSelect.forEach(element => {
+            document.getElementById(element).style = "transition: 1s;transform: scaleX(-1);"; 
+        });
+    }
+    if(key == 38){
+        //up
+        buttonSelect.forEach(element => {
+            document.getElementById(element).style = "transition: 1s;transform: scaleY(1);"; 
+        });
+    }
+    if(key == 39){
+        //right
+        buttonSelect.forEach(element => {
+            document.getElementById(element).style = "transition: 1s;transform: scaleX(1);"; 
+        });
+    }
+    if(key == 40){
+        //down
+        buttonSelect.forEach(element => {
+            document.getElementById(element).style = "transition: 1s;transform: scaleY(-1);"; 
+        });
+    }
 }

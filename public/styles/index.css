@@ -28,6 +28,9 @@ button{
     background-color: transparent;
     width: 80%;
 }
+.container div button{
+    outline: none;
+}
 img{
     width: 100%;
 }
