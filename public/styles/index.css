@@ -34,25 +34,3 @@ button{
 img{
     width: 100%;
 }
-.mobile-control{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 20vh;
-}
-.box-up{
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 100%;
-}
-.box-up button{
-    width: 33%;
-    margin: 0 auto 0 auto;
-}
-.box-bottom{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 100%;
-}

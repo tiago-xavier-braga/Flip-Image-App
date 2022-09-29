@@ -10,6 +10,12 @@
 </head>
 <body onkeydown="keyEvent(event)">
     <main>
+        <div class="inputBox">
+            <span>
+                <input type="url" name="urlImg" id="urlImg">
+                <button><p><i class="fa-solid fa-paper-plane"></i></p></button>
+            </span>
+        </div>
         <div class="container">
             <div>
                 <button id="1x1">
@@ -30,16 +36,6 @@
                 <button id="2x2">
                     <img src="public/img/img.jpg" id="2x2img" width="100" onclick="selectImage('2x2img');">
                 </button>
-            </div>
-        </div>
-        <div class="mobile-control">
-            <div class="box-up">
-                <button><p><i class="fa-solid fa-caret-up"></i></p></button>
-            </div>
-            <div class="box-bottom">
-                <button><p><i class="fa-solid fa-caret-left"></i></p></button>
-                <button><p><i class="fa-solid fa-caret-down"></i></p></button>
-                <button><p><i class="fa-solid fa-caret-right"></i></p></button>
             </div>
         </div>
     </main>
