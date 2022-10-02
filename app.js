@@ -1,5 +1,4 @@
 var buttonSelect = [];
-
 function selectImage(position){
     let image = document.getElementById(position);
 
@@ -19,7 +18,6 @@ function selectImage(position){
 function keyEvent(event) {
     var key = event.keyCode || event.which;
     var keychar = String.fromCharCode(key);
-    //alert("Key pressed " + key);
     if(key == 37){
         buttonSelect.forEach(element => {
             document.getElementById(element).style = "transition: 1s;transform: scaleX(-1);"; 
