@@ -1,4 +1,14 @@
 var buttonSelect = [];
+
+function pickPicture(){
+    let url = document.getElementById('urlImg');
+    let idImg = ['1x1Img', '1x2Img', '2x1Img', '2x2Img'];
+
+    idImg.forEach(element => {
+        document.getElementById(element).src = url.value;
+    });
+}
+
 function selectImage(position){
     let image = document.getElementById(position);
 

@@ -27,7 +27,7 @@ main{
     height: 5vh;
     border: none;
     outline: none;
-    padding: 5px;
+    padding: 5px 5px 5px 10px;
     background-color: transparent;
 }
 .lineBox button{
