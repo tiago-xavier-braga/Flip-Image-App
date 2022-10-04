@@ -9,6 +9,35 @@ main{
     height: 100vh;
     width: 100%;
 }
+.inputBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lineBox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    border: 1px solid #000;
+    border-radius: 50px;
+}
+.lineBox input{
+    width: 80%;
+    height: 5vh;
+    border: none;
+    outline: none;
+    padding: 5px;
+    background-color: transparent;
+}
+.lineBox button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 6vh;
+    font-size: large;
+}
 .container{
     display: grid;
     grid-template-columns: 1fr 1fr;
